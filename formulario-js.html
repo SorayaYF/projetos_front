@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario JS</title>
+    <script src="js/scripts.js"></script>
+    <link rel="stylesheet" href="css/formulario.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Formulário IMC</h1>
+        <form action="#" method="get" onsubmit="return enviarFormulario()">
+            <label for="txtNome">Nome: </label>
+            <input type="text" id="txtNome" name="txtNome">
+            <br />
+            <label for="txtNome">Sexo: </label>
+            <input type="radio" name="rSexo" value="masculino">Masc
+            <input type="radio" name="rSexo" value="feminino">Fem
+            <br />
+            <label for="txtPeso">Peso: </label>
+            <input type="number" id="txtPeso" name="txtPeso">
+            <label for="txtAltura">Altura: </label>
+            <input type="text" id="txtAltura" name="txtAltura">
+            <br />
+            <button>
+                Avaliar
+            </button>
+            <br />
+            <textarea readonly="true" name="txtDados" id="txtDados" cols="30" rows="10"></textarea>
+            <br />
+        </form>
+        <p><a href="menu.html">Voltar</a></p>
+    </div>
+</body>
+
+</html>
