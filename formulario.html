@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+    <form action="" method="get" autocomplete="on">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="usuario">Usuário</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">@</div>
+                        </div>
+                        <input type="text" class="form-control" placeholder="nome de usuário" aria-label="usuario"
+                            aria-describedby="btnGroupAddon">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="datetime">Data e Hora</label>
+                    <input type="datetime-local" class="form-control" id="datetime" name="datetime">
+                </div>
+                <div class="form-group">
+                    <label for="file">Arquivo</label>
+                    <input type="file" class="form-control" id="file" name="file">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" class="form-control" id="email" name="email">
+                </div>
+                <div class="form-group">
+                    <label for="telefone">Telefone</label>
+                    <input type="tel" class="form-control" id="telefone" name="telefone">
+                </div>
+                <div class="form-group">
+                    <label for="estado">Estado</label>
+                    <select class="form-control" id="estado" name="estado">
+                        <option value="" selected disabled>Selecione um estado</option>
+                        <option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="DF">Distrito Federal</option>
+                        <option value="ES">Espírito Santo</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PA">Pará</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PR">Paraná</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="TO">Tocantins</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="comentario">Comentário</label>
+            <textarea class="form-control" id="comentario" name="comentario" rows="4"></textarea>
+        </div>
+        <div class="center-align">
+            <div class="btn-group" role="group" aria-label="radio toggle button group">
+                <input type="radio" class="btn-check" name="estadocivil" id="estadocivil1" autocomplete="off" checked>
+                <label class="btn btn-outline-dark" for="estadocivil1"><span class="icon">&#9794;</span>Solteiro</label>
+                <input type="radio" class="btn-check" name="estadocivil" id="estadocivil2" autocomplete="off">
+                <label class="btn btn-outline-dark" for="estadocivil2"><span class="icon">&#9892;</span>Casado</label>
+                <input type="radio" class="btn-check" name="estadocivil" id="estadocivil3" autocomplete="off">
+                <label class="btn btn-outline-dark" for="estadocivil3"><span
+                        class="icon">&#9792;</span>Divorciado</label>
+            </div>
+        </div>
+        <div class="center-align">
+            <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+                <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+                <label class="btn btn-outline-dark" for="btncheck1"><span class="icon">&#127939;</span>Natação</label>
+
+                <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
+                <label class="btn btn-outline-dark" for="btncheck2"><span class="icon">&#128692;</span>Ciclismo</label>
+
+                <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
+                <label class="btn btn-outline-dark" for="btncheck3"> <span class="icon">&#9917;</span>Futebol</label>
+
+                <input type="checkbox" class="btn-check" id="btncheck4" autocomplete="off">
+                <label class="btn btn-outline-dark" for="btncheck4"><span class="icon">&#127943;</span>Hipismo</label>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="center-align">
+            <button type="button" class="btn btn-outline-dark">Buscar</button>
+        </div>
+    </form>
+    <div class="center-align">
+        <p><a href="menu.html">Voltar</a></p>
+    </div>
+</body>
+
+</html>

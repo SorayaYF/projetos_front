@@ -1,0 +1,86 @@
+p {
+    color: blue;
+    font-size: 18px;
+}
+
+.destaque {
+    font-weight: bold;
+    background-color: black;
+    color: yellow;
+    font-style: italic;
+}
+
+.caixa {
+    width: 200px;
+    height: 200px;
+    border: black 5px solid;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+.caixaArredondada{
+    border-radius: 50px;
+}
+
+.caixaAmarela{
+    background-color: yellow;
+}
+
+.caixaAzul{
+    background-color: blue;
+}
+
+a:link{
+    margin: 20px;
+    background-color: lightgray;
+}
+
+a:visited{
+    color:gray;
+}
+
+a:hover{
+    background-color: white;
+    color: red !important;
+
+}
+
+a:active{
+    font-size: 15px;
+}
+
+ul li{
+    color: green;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.btn-group-vertical {
+    margin-bottom: 20px;
+}
+
+.form-inline .form-group {
+    margin-bottom: 0;
+}
+
+.btn-check-black {
+    color: #000;
+    background-color: #fff;
+    border-color: #000;
+}
+.icon {
+    margin-right: 5px;
+}
+
+.custom-control-label:before {
+    top: 0.15rem;
+}
+
+.center-align {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
