@@ -60,7 +60,21 @@ function enviarFormulario() {
     }
 
     const msg = `Nome: ${pessoa.nome}\nIMC: ${(imc.toFixed(2))}\nAvaliação: ${avaliacao}`;
-    document.getElementById("txtDados").value = msg;
+
+    const txtDados = document.getElementById("txtDados");
+    txtDados.value = msg;
+
     return false;
+}
+
+function salvarResultado() {
+    const txtDados = document.getElementById("txtDados");
+    const resultado = txtDados.value;
+
+    const resultadosDiv = document.getElementById("resultados");
+    const novaDiv = document.createElement("div");
+    novaDiv.innerHTML = resultado;
+    novaDiv.classList.add("resultado-box");
+    resultadosDiv.appendChild(novaDiv);
 }
 
